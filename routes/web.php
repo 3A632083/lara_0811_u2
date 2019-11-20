@@ -45,7 +45,13 @@ Route::get('welcome',function(){
 //});
 
 //4-1
-Route::get('hello/{name?}',['as'=>'hello.index',function($name='Everybody'){
-    return'Hello,'.$name;
+//Route::get('hello/{name?}',['as'=>'hello.index',function($name='Everybody'){
+//    return'Hello,'.$name;
+//}]);
+
+//4-3
+Route::get('say/{name?}',['as'=>'hello.index',function($name= 'Everybody'){
+    return view('welcome');
 }]);
+
 
