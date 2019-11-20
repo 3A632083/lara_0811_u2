@@ -21,6 +21,11 @@
 //});
 
 //1-2
+//Route::get('/',function(){
+//    return view('welcome');
+//});
+
+//1-3
 Route::get('/',function(){
-    return view('welcome');
+    return redirect('welcome');
 });
