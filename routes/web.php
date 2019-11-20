@@ -54,4 +54,9 @@ Route::get('say/{name?}',['as'=>'hello.index',function($name= 'Everybody'){
     return view('welcome');
 }]);
 
+//5-1
+Route::get('dashboard',function(){
+    return'dashboard';
+});
+
 
