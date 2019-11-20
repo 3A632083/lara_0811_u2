@@ -39,8 +39,13 @@ Route::get('welcome',function(){
 //    return'Hello,'.$name;
 //});
 
-//2-2
-Route::get('hello/{name?}',function($name='Everybody'){
+//2-3
+//Route::get('hello/{name?}',function($name='Everybody'){
+//    return'Hello,'.$name;
+//});
+
+//4-1
+Route::get('hello/{name?}',['as'=>'hello.index',function($name='Everybody'){
     return'Hello,'.$name;
-});
+}]);
 
