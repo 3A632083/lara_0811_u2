@@ -15,6 +15,12 @@
 //    return view('welcome');
 //});
 
+//1-1
+//Route::get('/',function(){
+//    return'welcome';
+//});
+
+//1-2
 Route::get('/',function(){
-    return'welcome';
+    return view('welcome');
 });
